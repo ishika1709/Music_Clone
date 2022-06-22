@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&family=Varela+Round&display=swap');
+
+/* Universal CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: turquoise;
+}
+
+
+/* Logo CSS */
+
+.brand img {
+    width: 45px;
+    padding: 0 10px 0 0;
+    border-radius: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+
+/* NavBar CSS */
+
+nav {
+    font-family: 'Signika', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+
+/* Content CSS */
+
+.container {
+    min-height: 72.5vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1280px 720px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+}
+
+.list h1 {
+    padding: 12px 30px 0 30px;
+}
+
+.banner,
+.list {
+    float: left;
+    width: 50%;
+}
+
+.list {
+    background-color: rgba(128, 128, 128, 0.7);
+    margin: 17px 25px 17px 25px;
+    border-radius: 17px;
+}
+
+.songItem {
+    height: 40px;
+    display: flex;
+    /* background-color: turquoise; */
+    width: 85%;
+    margin: 12px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songItem img {
+    width: 35px;
+}
+
+.minigif {
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.play i {
+    cursor: pointer;
+}
+
+.banner {
+    /* position: sticky; */
+    /* background-color: red; */
+    margin: 17px 25px 17px 25px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    /* height: 680px; */
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    padding: 35px 0;
+}
+
+.banner h1 {
+    padding: 0 0 15px 0;
+}
+
+#gif {
+    width: 180px;
+    height: 50px;
+    margin: 13px 0 0 0;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.Songpic {
+    border-radius: 10px;
+}
+
+
+/* Footer CSS */
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-bottom: 13px;
+}
+
+.icons i {
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+#progressbar {
+    width: 45vw;
+    cursor: pointer;
+}
+
+.songinfo {
+    position: absolute;
+    left: 40px;
+    font-family: 'Signika', sans-serif;
+}
+
+.songname {
+    font-weight: bolder;
+}
